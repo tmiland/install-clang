@@ -384,7 +384,7 @@ if [ "$OS" == "Darwin" ]; then
     CMAKE_stage1="-DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++"
 
 elif [ "$OS" == "Linux" ] || [ "$OS" == "FreeBSD" ]; then
-    CMAKE_stage1="-DLIBCXX_ENABLE_STATIC_ABI_LIBRARY=on -DLIBCXX_ENABLE_ABI_LINKER_SCRIPT=off -DLIBCXXABI_ENABLE_SHARED=off -DLLVM_ENABLE_BINDINGS=OFF"
+    CMAKE_stage1="-DLIBCXX_ENABLE_STATIC_ABI_LIBRARY=on -DLIBCXX_ENABLE_ABI_LINKER_SCRIPT=off -DLIBCXXABI_ENABLE_SHARED=off"
     CMAKE_stage2=$CMAKE_stage1
     default_includes=$(add_include_path features.h /usr/include)
     default_includes=$(add_include_path sys/cdefs.h /usr/include/${triple} /usr/include)
