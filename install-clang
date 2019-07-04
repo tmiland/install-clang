@@ -160,14 +160,14 @@ shift
 
 if [ "${use_master}" != "1" ]; then
     # git version to checkout.
-    version_llvm=release_80
-    version_clang=release_80
-    version_libcxx=release_80
-    version_compilerrt=release_80
-    version_libcxxabi=release_80
-    version_lldb=release_80
-    version_lld=release_80
-    version_extra=release_80
+    version_llvm=release_60
+    version_clang=release_60
+    version_libcxx=release_60
+    version_compilerrt=release_60
+    version_libcxxabi=release_60
+    version_lldb=release_60
+    version_lld=release_60
+    version_extra=release_60
 
     cherrypick="tools/clang 9a63380260860" # clang-format: SpaceAfterLogicalNot
 else
